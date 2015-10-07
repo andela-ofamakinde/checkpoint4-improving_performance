@@ -8,10 +8,4 @@ class Article < ActiveRecord::Base
 
   scope :articles_with_names_less_than_20_char, -> { where('length(name) < 20') }
 
-  # def self.articles_with_names_less_than_20_char
-  #   select do |art|
-  #     art.name.length < 20
-  #   end
-  # end
-
 end
