@@ -3,9 +3,9 @@
 <nav style="background-color: #9AEEE8">
   <%= link_to "Stats", stats_index_path %>
 </nav>
-
+<%= will_paginate @authors %>
 <div class="author">
-  <% cache(cache_key_for_authors) do %>
+  <% cache("#{cache_key_for_authors}#{@authors.current_page}") do %>
     <% @authors.each do |author| %>
       <h2>My name is <%= author.name %></h2>
           <% author.articles.each do |article| %>
