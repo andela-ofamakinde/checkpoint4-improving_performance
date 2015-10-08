@@ -9,14 +9,14 @@ gem 'will_paginate'
 gem 'newrelic_rpm'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'turbolinks'
+gem 'fabrication'
+gem 'faker'
 
 group :development, :test do
   gem 'sqlite3'
   gem 'pry'
   gem 'web-console', '~> 2.0'
   gem 'spring'
-  gem 'fabrication'
-  gem 'faker'
   gem 'rspec-rails', '~> 3.3.3'
   gem 'bullet'
 end
