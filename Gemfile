@@ -8,6 +8,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'will_paginate'
 gem 'newrelic_rpm'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'turbolinks'
 
 group :development, :test do
   gem 'sqlite3'
@@ -21,5 +22,4 @@ group :development, :test do
 end
 group :production do
   gem 'pg'
-  gem 'railties'
 end
