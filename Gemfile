@@ -12,6 +12,7 @@ gem 'rails-observers', git: 'https://github.com/rails/rails-observers.git'
 gem 'turbolinks'
 gem 'fabrication'
 gem 'faker'
+gem 'cache_digests'
 
 group :development, :test do
   gem 'sqlite3'

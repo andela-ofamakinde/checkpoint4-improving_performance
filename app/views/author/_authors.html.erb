@@ -1,12 +1,15 @@
 <%= will_paginate @authors %>
 <div class="author">
-  <% cache("#{cache_key_for_authors}#{@authors.current_page}") do %>
   <% @authors.each do |author| %>
-    <h2>My name is <%= author.name %></h2>
-    <% author.articles.each do |article| %>
-      <p>I wrote: <span style="text-decoration: underline"><%= link_to article.name, articles_show_path(article) %> </span></p> 
+    <% cache author do %>
+      <h2>My name is <%= author.name %></h2>
+      <% author.articles.each do |article| %>
+        <% cache article do %>
+        <p>I wrote: <span style="text-decoration: underline"><%= link_to article.name, articles_show_path(article) %> </span></p> 
+        <% end %>
+      <% end %>
     <% end %>
   <% end %>
-  <%= will_paginate @authors %>
-<% end %>
 </div>
+<%= will_paginate @authors %>
+
