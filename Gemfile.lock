@@ -50,9 +50,6 @@ GEM
     bullet (4.14.5)
       activesupport (>= 3.0.0)
       uniform_notifier (~> 1.9.0)
-    cache_digests (0.3.1)
-      actionpack (>= 3.2)
-      thread_safe
     coderay (1.1.0)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
@@ -189,7 +186,6 @@ PLATFORMS
 
 DEPENDENCIES
   bullet
-  cache_digests
   coffee-rails (~> 4.1.0)
   fabrication
   faker
