@@ -22,7 +22,6 @@ module WorstApp
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
-    config.active_record.observers = :author_sweeper
     config.autoload_paths += %W(#{Rails.root}/app/sweepers/)
   end
 end
