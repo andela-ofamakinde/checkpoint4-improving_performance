@@ -53,4 +53,4 @@ puts Benchmark.measure {Article.pluck(:id)}
 ```
 The real time is 0.006992 for the AR query. Ruby is about 300% slower.
 
-The URL to the super fast app [https://performancetest.herokuapp.com/]
+The URL to the super fast app https://performancetest.herokuapp.com/
